@@ -1,0 +1,17 @@
+firstname: John
+middlename: Mike
+lastname: Johnson # equivalent to JSON "key":"value"
+hobbies: # equivalent to JSON array
+  - reading
+  - coding
+  - playing music
+  - sociallizing 
+address: # equivalent to JSON nested object
+  street: Jalan jalan men
+  city: Bandung
+  coountry: Indonesia
+eallet: # equivalent to JSON array of objects
+  - type: cash
+    amount: 29999
+  -type: debit
+    amount: 50999999999999

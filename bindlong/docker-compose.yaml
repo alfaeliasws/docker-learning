@@ -1,0 +1,15 @@
+services:
+  mongodb2:
+    container_name: mongodb2
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: john
+      MONGO_INITDB_ROOT_PASSWORD: john
+      MONGO_INITDB_DATABASE: admin 
+    volumes:
+      - type: bind
+        source: "./data-mongo2"
+        target: "/data/db"
+        read_only: false
